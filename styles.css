@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgba(52, 52, 52, 0.551), rgba(3, 0, 203, 0.685));
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    min-width: 50vw;
+    min-height: 50vh;
+    background-image: linear-gradient(to bottom left, rgba(102, 155, 202, 0.659), rgba(49, 78, 148, 0.635));
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid ;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.pregunta{
+    padding: 50px 10px;
+}
+.puntuacion{
+    position: absolute;
+    top: 30px;
+    background-image: linear-gradient(to bottom left, rgba(101, 101, 208, 0.444), rgba(117, 202, 239, 0.597));
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.respuesta{
+    font-size: 1.9rem;
+    padding: 25px 15px;
+    text-align: left;
+    background: transparent;
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+}
+.respuesta.correcto{
+    background-color: rgba(73, 229, 73, 0.324);
+}
+.respuesta.incorrecto{
+    background-color: rgba(255, 43, 43, 0.362);
+}
+.respuesta:hover{
+    background-color: rgba(70, 156, 218, 0.519);
+}
+.next, .again{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, rgba(101, 101, 208, 0.444), rgba(117, 202, 239, 0.597));
+    display: none;
+    width: fit-content;
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: .3s;
+}
+.next:hover{
+    transform: scale(1.1);
+}
+.puntuacion-total{
+    padding: 30px 0;
+}
